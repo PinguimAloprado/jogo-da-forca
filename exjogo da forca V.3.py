@@ -27,7 +27,7 @@ while True:   #COMEÇO/MENU
                 chutes = checar(player, chutes)
                 if player not in PalavraSorteada:
                     vida -= 1
-                    if vida == 0:
+                    if vida <= 0:
                         print(f'\033[31mVocê perdeu mais sorte na proxima. a palavra era {PalavraSorteada}\033[m')
                         break
                 if PalavraSorteada == escondepalavra(PalavraSorteada, chutes):
